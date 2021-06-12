@@ -79,11 +79,12 @@
 // console.log(obj, user2, user1);
 
 // Freezing An Object
-const user1 = {
-    age: 26,
-    mobile: 1993,
-    name: "Talha"
-}
-Object.freeze(user1);
-user1.name = 'Abu';
-console.log(user1.name)
+// const user1 = {
+//     age: 26,
+//     mobile: 1993,
+//     name: "Talha"
+// }
+// Object.freeze(user1);
+// user1.name = 'Abu';
+// console.log(user1.name)
+
