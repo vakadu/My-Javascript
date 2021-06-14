@@ -14,13 +14,13 @@
 // z();
 
 
-function x(){
+// function x(){
 
-    for(var i=1; i<=5; i++){
-        setTimeout(function(){
-            console.log(val, 'i')
-        }, val * 1000)
-    }
+//     for(var i=1; i<=5; i++){
+//         setTimeout(function(){
+//             console.log(val, 'i')
+//         }, val * 1000)
+//     }
 
     // for(var i=1; i<=5; i++){
     //     function close(val){
@@ -36,9 +36,9 @@ function x(){
     //         console.log(i, 'i')
     //     }, i * 1000)
     // }
-}
+// }
 
-x();
+// x();
 
 
 
@@ -57,3 +57,33 @@ x();
 // Closures are basically functions along with lexical scope bundled together forms closures. 
 // z();
 // console.log(z);
+
+// var a = 30;
+// function outest(){
+//     var c = 20;
+//     function outer(log){
+//         function inner(){
+//             console.log(a, log, c);
+//         }
+//         let a = 10;
+//         return inner;
+//     }
+//     return outer;
+// }
+
+// outest()("hello")();
+
+//data hiding
+function counter(){
+    var count = 0;
+    function incrementCounter(){
+        count++;
+        console.log(count);
+    }
+    return incrementCounter;
+}
+
+var inc1 = counter();
+var inc2 = counter();
+inc1();
+inc2();
